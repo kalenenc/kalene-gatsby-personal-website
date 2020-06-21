@@ -9,9 +9,11 @@ import Button from "../components/button"
 
 class Blog extends React.Component {
   render() {
+    console.log('this.props - blog.js', this.props)
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
+    console.log('siteTitle', siteTitle)
 
     return (
       <Layout location={this.props.location} title={siteTitle}>

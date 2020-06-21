@@ -67,9 +67,7 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          this is the footer
         </Footer>
       </Wrapper>
     )
@@ -86,3 +84,13 @@ const Footer = styled.footer`
 `
 
 export default Layout
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
