@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
+import Navigation from "./navigation"
+import Footer from './footer'
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -54,34 +55,19 @@ class Layout extends React.Component {
       )
     }
     return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <header>{header}</header>
+      <div className="padding">
+        <div>
+          <header>
+            <Navigation></Navigation>
+          </header>
+
           <main>{children}</main>
         </div>
-        <Footer>
-          this is the footer
-        </Footer>
-      </Wrapper>
+        <Footer></Footer>
+      </div>
     )
   }
 }
-
-const Wrapper = styled.div`
-  min-height: 100vh;
-`
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
-`
 
 export default Layout
 

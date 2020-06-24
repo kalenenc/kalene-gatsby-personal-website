@@ -1,0 +1,28 @@
+.red {
+    border: 2px solid blue;
+}
+
+.nav__list {
+    font-family: 'Varela Round', sans-serif;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.nav__list li {
+    padding: var(--xs-spacing) var(--sm-spacing);
+    margin: 0 var(--sm-spacing) 0 0;
+    background: var(--chocolate);
+    color: var(--white);
+    letter-spacing: var(--letter-spacing);
+}
+
+.nav__list li:nth-child(2n) {
+    background: var(--olive);
+}
+
+.nav__list li:last-child {
+    margin: 0;
+}

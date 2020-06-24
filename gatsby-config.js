@@ -87,5 +87,17 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `varela round\:400`,
+          `dawning of a new day\:400`,
+          `open sans\:600`,
+        ],
+        display: 'swap'
+      }
+    }
+  
   ],
 }

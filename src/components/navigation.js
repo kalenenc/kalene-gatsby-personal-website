@@ -1,12 +1,14 @@
 import React from "react"
+import navigationStyles from "./style-modules/navigation.module.css"
+
 
 const Navigation = _props => (
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Projects</li>
-            <li>Contact</li>
+    <nav className={navigationStyles.red}>
+        <ul className={navigationStyles.nav__list}>
+            <li>about</li>
+            <li>blog</li>
+            <li>projects</li>
+            <li>contact</li>
         </ul>
     </nav>
 )

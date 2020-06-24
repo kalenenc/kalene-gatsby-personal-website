@@ -1,0 +1,72 @@
+.padding {
+    padding: 1rem;
+}
+
+/* Colors */
+
+
+:root {
+    /* Spacing */
+    --base-spacing: 2rem; /* 20px */
+    --sm-spacing: calc(var(--base-spacing) / 2); /*  10 */
+    --xs-spacing: calc(var(--sm-spacing) / 2); /* 5  */
+    --xxs-spacing: calc(var(--xs-spacing) / 2); /* 2.5 */
+    --lg-spacing: calc(var(--base-spacing * 2)); /* 40  */
+    --x-lg-spacing: calc(var(--lg-spacing * 2)); /* 80 */
+    --xx-lg-spacing: calc(var(--x-lg-spacing * 2)); /* 160 */
+    --letter-spacing: 0.01rem;
+
+    /* Colors */
+    --green: #59775D;
+    --olive: #9DA47A;
+    --chocolate: #B79074;
+    --white: #ffffff;
+
+
+}
+
+html {
+    font-size: var(--sm-spacing);
+    font-family: 'open sans'
+
+}
+
+/* -------- Lists -------- */
+
+.list--blank {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: decimal;
+  margin:  0 0 var(--sm-spacing);
+  padding: 0 0 0 var(--base-spacing);
+}
+
+ul {
+  list-style-type: disc;
+  margin:  0 0 var(--sm-spacing);
+  padding: 0 0 0 var(--base-spacing);
+
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-bottom: 0;
+}
+
+
+dl {
+  margin-bottom: var(--base-spacing) / 2;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: var(--base-spacing) / 2;
+}
+
+dl dd {
+    margin: 0
+}
