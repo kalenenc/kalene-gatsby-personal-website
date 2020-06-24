@@ -93,7 +93,6 @@ module.exports = {
         fonts: [
           `varela round\:400`,
           `dawning of a new day\:400`,
-          `open sans\:600`,
         ],
         display: 'swap'
       }
