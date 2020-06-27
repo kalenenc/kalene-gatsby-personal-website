@@ -7,12 +7,53 @@ h2 {
   color: var(--light-chocolate);
 }
 
+.header__description_container {
+  border: 2px solid purple;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  justify-content: center;
+}
+
 .header__description {
-  display: block;
-  margin: 0 auto;
-  width: 75%;
+  border: 2px solid red;
   padding-bottom: 2.8rem;
 }
+
+.header__image_container {
+  border: 2px solid blue;
+}
+
+.header__image_container img {
+  margin: 0;
+}
+
+.svg__container {
+  position: relative;
+  border: 2px solid orange;
+  bottom: 60%;
+  left: 40%;
+  display: block;
+}
+
+svg {
+  position: absolute;
+}
+
+.svg__one {
+  top: 60px;
+  left: 20px;
+}
+
+.svg__two {
+  top: 25px;
+  left: 60px;
+}
+
+.svg__three {
+  
+}
+
 
 hr {
   border-top: 7px dotted var(--olive);
