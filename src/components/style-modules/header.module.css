@@ -1,0 +1,23 @@
+header {
+  background: var(--green);
+  color: var(--white);
+}
+
+h2 {
+  color: var(--light-chocolate);
+}
+
+.header__description {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  padding-bottom: 2.8rem;
+}
+
+hr {
+  border-top: 7px dotted var(--olive);
+  width: 75%;
+  margin: 0 auto;
+  background: transparent;
+  padding-bottom: 5.6rem;
+}

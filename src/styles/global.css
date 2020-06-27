@@ -19,16 +19,25 @@
     /* Colors */
     --green: #59775D;
     --olive: #9DA47A;
+    --light-olive: #d5dcb4;
     --chocolate: #B79074;
+    --light-chocolate: #d4bcab;
     --white: #ffffff;
 
 
 }
 
-html {
+html body {
     font-size: var(--sm-spacing);
-    font-family: 'open sans'
+    font-family: 'Varela Round', sans-serif;
+}
 
+h2, h3, h4, h5, h6, p, a {
+  font-family: 'Varela Round', sans-serif;
+}
+
+a {
+  color: var(--light-olive);
 }
 
 /* -------- Lists -------- */

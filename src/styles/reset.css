@@ -22,7 +22,6 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Varela Round', sans-serif;
 }
 
 /**
@@ -31,8 +30,8 @@ body {
    */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 3em;
+  margin: 0;
 }
 
 /* Grouping content
