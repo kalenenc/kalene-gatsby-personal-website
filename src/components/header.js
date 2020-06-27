@@ -1,10 +1,11 @@
 import React from "react"
+import NameTag from './nametag'
+import Navigation from './navigation'
 
 const Header = _props => (
     <header>
-        <div>
-            <h1>Kalene</h1>
-        </div>
+        <Navigation></Navigation>
+        <NameTag></NameTag>
 
         <h2>Hi</h2>
         <p>I’m Kalene, a frontend developer and lifelong-learner with a desire to help support others in, or looking to get into tech.</p>

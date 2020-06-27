@@ -87,16 +87,16 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          `varela round\:400`,
-          `dawning of a new day\:400`,
-        ],
-        display: 'swap'
-      }
-    }
+        custom: {
+          families: ["Varela Round, Dawning of a New Day"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
   
   ],
 }

@@ -3,7 +3,7 @@ import navigationStyles from "./style-modules/navigation.module.css"
 
 
 const Navigation = _props => (
-    <nav className={navigationStyles.red}>
+    <nav>
         <ul className={navigationStyles.nav__list}>
             <li>about</li>
             <li>blog</li>

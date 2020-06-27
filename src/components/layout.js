@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Navigation from "./navigation"
+import Header from "./header"
 import Footer from './footer'
 
 import { rhythm, scale } from "../utils/typography"
@@ -54,12 +54,11 @@ class Layout extends React.Component {
         </h3>
       )
     }
+    console.log(header)
     return (
       <div className="padding">
         <div>
-          <header>
-            <Navigation></Navigation>
-          </header>
+          <Header></Header>
 
           <main>{children}</main>
         </div>
