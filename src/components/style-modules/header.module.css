@@ -25,15 +25,16 @@ h2 {
 }
 
 .header__image_container img {
+  position: relative;
   margin: 0;
 }
 
 .svg__container {
+  display: block;
   position: relative;
   border: 2px solid orange;
-  bottom: 60%;
-  left: 40%;
-  display: block;
+  bottom: 0;
+  left: 0;
 }
 
 svg {
