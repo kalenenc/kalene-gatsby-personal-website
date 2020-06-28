@@ -14,9 +14,10 @@ function Header() {
         function handleResize() {
             const imageContainerWidth = imageContainer.current.getBoundingClientRect().width;
             setSvgSize(imageContainerWidth)
+            console.log('handleResize called; svgSize: ', svgSize)
         }
 
-        window.document.addEventListener('resize', handleResize)
+        window.addEventListener('resize', handleResize)
 
         handleResize()
     })
