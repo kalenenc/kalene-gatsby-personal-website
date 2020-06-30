@@ -8,31 +8,36 @@ h2 {
 }
 
 .header__description_container {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   padding: 4rem;
   display: grid;
-  grid-template-columns: 40% 50%;
+  grid-template-columns: 30% 50%;
   justify-content: center;
+  overflow: hidden;
 }
 
 .header__description {
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  padding: var(--xs-spacing);
   padding-bottom: 2.8rem;
 }
 
 .header__image_container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  position: relative;
 }
 
 .header__image_container img {
-  position: relative;
-  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .svg__container {
   display: block;
   position: relative;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   bottom: 0;
   left: 0;
 }
@@ -42,19 +47,19 @@ svg {
 }
 
 .svg__one {
-  top: 60px;
-  left: 20px;
+  left: 19%;
+  top: -34px;
 }
 
 .svg__two {
-  top: 25px;
-  left: 60px;
+  left: 4%;
+  top: 20px;
 }
 
 .svg__three {
-  
+  left: 34%;
+  top: 45px;
 }
-
 
 hr {
   border-top: 7px dotted var(--olive);
@@ -62,4 +67,73 @@ hr {
   margin: 0 auto;
   background: transparent;
   padding-bottom: 5.6rem;
+}
+
+
+
+/* --------- Breakpoint: 1026 --------- */
+@media(max-width: 2000px) {
+  .svg__one {
+    left: 40%;
+    top: 11px;
+  }
+  
+  .svg__two {
+    left: 26%;
+    top: 20px;
+  }
+  
+  .svg__three {
+    left: 29%;
+    top: -35px;
+  }
+}
+
+@media(max-width: 1350px) {
+  .svg__one {
+    left: 24%;
+    top: 42px;
+  }
+  
+  .svg__two {
+    left: 14%;
+    top: -4px;
+  }
+  
+  .svg__three {
+    left: 34%;
+    top: -31px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .svg__one {
+    left: 11%;
+    top: 20px;
+  }
+  
+  .svg__two {
+    left: 4%;
+    top: -23px;
+  }
+  
+  .svg__three {
+    left: 1%;
+    top: 45px;
+  }
+
+  .header__description_container {
+    padding: 4rem 1rem;
+  }
+}
+
+
+@media (max-width: 755px) { 
+  .header__description_container {
+    grid-template-columns: 100%;
+    padding: 1rem;
+  }
+  .header__image_container {
+    display: none;
+  }
 }
