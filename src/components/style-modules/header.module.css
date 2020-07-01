@@ -8,36 +8,39 @@ h2 {
 }
 
 .header__description_container {
-  /* border: 2px solid purple; */
+  border: 2px solid purple;
   padding: 4rem;
   display: grid;
   grid-template-columns: 30% 50%;
   justify-content: center;
-  overflow: hidden;
 }
 
 .header__description {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   padding: var(--xs-spacing);
   padding-bottom: 2.8rem;
 }
 
 .header__image_container {
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   position: relative;
 }
 
 .header__image_container img {
-  position: absolute;
+  width: 65%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .svg__container {
   display: block;
   position: relative;
-  /* border: 2px solid orange; */
+  border: 2px solid orange;
   bottom: 0;
   left: 0;
 }

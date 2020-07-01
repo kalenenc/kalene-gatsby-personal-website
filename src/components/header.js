@@ -52,7 +52,7 @@ function Header() {
                             <rect width={svgSize} height={svgSize} fill="var(--light-olive)" />
                         </svg>
                     </div>
-                    <img style={{width: `${svgSize * 0.85}px`}} ref={imageRef} src={MeAndReese} alt="Kalene and her dog, Reese."/>
+                    <img ref={imageRef} src={MeAndReese} alt="Kalene and her dog, Reese."/>
 
                 </div>
             </div>
