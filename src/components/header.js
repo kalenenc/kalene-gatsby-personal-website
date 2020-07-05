@@ -19,44 +19,13 @@ function Header() {
     const imageRef = useRef();
     const imageContainer = useRef();
 
-    // const handleResize = () => {
-    //     const svgSize = imageRef.current.getBoundingClientRect().height;
-    //     const topOffset = `${imageRef.current.offsetTop}px`
-    //     const leftOffset = `${imageRef.current.offsetLeft}px`
-
-    //     const newState = {
-    //         ...svgConfig,
-    //         svgSize,
-    //         svgPosition: {
-    //             ...svgConfig.svgPosition,
-    //             topOffset,
-    //             leftOffset
-    //         }
-    //     }
-
-    //     setSvgConfig(newState);
-
-    //     console.log('handleResize called')
-    //     console.log('svgConfig', svgConfig)
-    // }
-
-    // --- Effects ---
-    // useEffect(() => {
-    //     window.addEventListener('resize', handleResize)
-
-    //     return _ => {
-    //         window.removeEventListener('resize', handleResize)
-    //     } 
-    // })
-
-    // Send in empty array to only run on mount and unmount of component
     useEffect(() => {
 
         let newState;
         const handleResize = () => {
-            const svgSize = `${imageRef.current.getBoundingClientRect().height}`;
-            const topOffset = `${imageRef.current.offsetTop}px`
-            const leftOffset = `${imageRef.current.offsetLeft}px`
+            const svgSize = `${imageRef.current.getBoundingClientRect().height}px`;
+            const topOffset = imageRef.current.offsetTop;
+            const leftOffset = imageRef.current.offsetLeft;
     
             newState = {
                 svgSize,
@@ -70,13 +39,13 @@ function Header() {
             console.log('handleResize called')
         }
 
-
-        handleResize()
+        setTimeout(()=> {
+            handleResize()
+        })
 
         window.addEventListener('resize', handleResize)
 
     }, [])
-
 
             
     return (
@@ -99,7 +68,12 @@ function Header() {
                             className={headerStyles.svg__one} 
                             width={svgConfig.svgSize} 
                             height={svgConfig.svgSize} 
-                            style={ {top: svgConfig.svgPosition.topOffset, left: svgConfig.svgPosition.leftOffset } }
+                            style={ 
+                                {
+                                    top: `${svgConfig.svgPosition.topOffset - 35}px` , 
+                                    left: `${svgConfig.svgPosition.leftOffset + 40}px` 
+                                }
+                            }
                             xmlns="http://www.w3.org/2000/svg" 
                             opacity="0.1"
                         >
@@ -109,7 +83,12 @@ function Header() {
                             className={headerStyles.svg__two}  
                             width={svgConfig.svgSize} 
                             height={svgConfig.svgSize} 
-                            style={ {top: svgConfig.svgPosition.topOffset, left: svgConfig.svgPosition.leftOffset } }
+                            style={ 
+                                {
+                                    top: `${svgConfig.svgPosition.topOffset + 40}px`, 
+                                    left: `${svgConfig.svgPosition.leftOffset + 85}px` 
+                                } 
+                            }
                             xmlns="http://www.w3.org/2000/svg" 
                             opacity="0.1"
                         >
@@ -119,7 +98,12 @@ function Header() {
                             className={headerStyles.svg__three}  
                             width={svgConfig.svgSize} 
                             height={svgConfig.svgSize} 
-                            style={ {top: svgConfig.svgPosition.topOffset, left: svgConfig.svgPosition.leftOffset } }
+                            style={ 
+                                {
+                                    top: `${svgConfig.svgPosition.topOffset + 25}px` , 
+                                    left: `${svgConfig.svgPosition.leftOffset - 40}px` 
+                                }
+                            }
                             xmlns="http://www.w3.org/2000/svg" 
                             opacity="0.1"
                         >
