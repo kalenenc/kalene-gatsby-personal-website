@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import QuickLinks from "../components/quicklinks"
+import WhatImUpTo from '../components/whatimupto'
 
 class IndexPage extends React.Component {
   render() {
@@ -19,6 +21,9 @@ class IndexPage extends React.Component {
         />
        
         <p>This is just some text</p>
+
+        <QuickLinks></QuickLinks>
+        <WhatImUpTo></WhatImUpTo>
         
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
