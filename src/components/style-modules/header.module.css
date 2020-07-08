@@ -8,22 +8,28 @@ h2 {
 }
 
 .header__description_container {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   padding: 4rem;
   display: grid;
-  grid-template-columns: 30% 50%;
+  grid-template-columns: 40% 40%;
   justify-content: center;
 }
 
 .header__description {
   /* border: 2px solid red; */
-  padding: var(--xs-spacing);
+  display: grid;
+  padding: var(--sm-spacing);
   padding-bottom: 2.8rem;
+  position: relative;
+}
+
+.description__container {
+  margin: auto;
 }
 
 .header__image_container {
   position: relative;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: grid;
   height: 100%;
 }
@@ -41,20 +47,6 @@ svg {
   margin: auto;
 }
 
-.svg__one {
-  /* left: 9%;
-  top: 11px; */
-}
-
-.svg__two {
-  /* left: 26%;
-  top: 34px; */
-}
-
-.svg__three {
-  /* left: 29%;
-  top: -55px; */
-}
 
 hr {
   border-top: 7px dotted var(--olive);
@@ -66,28 +58,8 @@ hr {
 
 
 
-/* --------- Breakpoints --------- */
-@media(max-width: 1160px) {
-  /* .svg__one {
-    left: 9%;
-    top: 5px;
-  }
-  
-  .svg__two {
-    left: 26%;
-    top: 54px;
-  }
-  
-  .svg__three {
-    left: 29%;
-    top: -10px;
-  } */
-}
-
-
-
 /* Removes image from header */
-@media (max-width: 755px) { 
+@media (max-width: 650px) { 
   .header__description_container {
     grid-template-columns: 100%;
     padding: 1rem;

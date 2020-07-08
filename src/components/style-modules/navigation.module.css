@@ -1,3 +1,7 @@
+nav {
+    margin-bottom: var(--xs-spacing);
+}
+
 .nav__list {
     list-style-type: none;
     padding: 0;
@@ -16,4 +20,46 @@
 
 .nav__list li:nth-child(2n) {
     background: var(--olive);
+}
+
+.nav_button__container {
+    display: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: var(--base-spacing);
+    padding: var(--xs-spacing);
+}
+
+
+
+
+/* Hamburger menu on mobile device */
+@media (max-width: 470px) {
+    .nav__list {
+        /* border: 2px solid red; */
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    .nav__list li {
+        margin: 0;
+        /* margin-bottom: 0.2rem; */
+    }
+
+    .nav_button__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .fullHeight {
+        height: auto;
+        padding-bottom: var(--sm-spacing);
+        transition: all 0.5s;
+    }
 }

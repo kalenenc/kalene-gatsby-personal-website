@@ -29,11 +29,13 @@
 
 html body {
     font-size: var(--sm-spacing);
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2, h3, h4, h5, h6, p, a {
-  font-family: 'Varela Round', sans-serif;
+  /* font-family: 'Varela Round', sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
 }
 
 a {

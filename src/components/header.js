@@ -41,7 +41,7 @@ function Header() {
 
         setTimeout(()=> {
             handleResize()
-        })
+        }, 100)
 
         window.addEventListener('resize', handleResize)
 
@@ -56,14 +56,14 @@ function Header() {
 
             <div className={headerStyles.header__description_container}>
                 <div className={headerStyles.header__description}>
-                    <h2>Hi.</h2>
-                    <p>I’m Kalene, a frontend developer and lifelong-learner with a desire to help support others in, or looking to get into tech.</p>
-                    <p>Read more about my journey <a href="#">here</a>.</p>
+                    <div className={headerStyles.description__container}>
+                        <h2>Hi.</h2>
+                        <p>I’m Kalene, a frontend developer and lifelong-learner with a desire to help support others in, or looking to get into tech.</p>
+                        <p>Read more about my journey <a href="#">here</a>.</p>
+                    </div>
                 </div>
 
                 <div ref={imageContainer} className={headerStyles.header__image_container}> 
-                    {/* <div className={headerStyles.svg__container} > */}
-
                         <svg 
                             className={headerStyles.svg__one} 
                             width={svgConfig.svgSize} 
@@ -109,7 +109,6 @@ function Header() {
                         >
                             <rect width={svgConfig.svgSize} height={svgConfig.svgSize} fill="var(--light-olive)" />
                         </svg>
-                    {/* </div> */}
                     <img ref={imageRef} src={MeAndReese} alt="Kalene and her dog, Reese."/>
 
                 </div>
