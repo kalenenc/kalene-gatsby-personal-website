@@ -36,7 +36,7 @@ function Header() {
             }
     
             setSvgConfig(newState);
-            console.log('handleResize called')
+            //console.log('handleResize called')
         }
 
         setTimeout(()=> {
