@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react"
+import { Link } from "gatsby"
 import navigationStyles from "./style-modules/navigation.module.css"
 
 
@@ -21,16 +22,16 @@ const Navigation = _props => {
             </div>
             <ul ref={ulRef} className={`${navigationStyles.nav__list} ${navigationStyles[heightClass]}`}>
                 <li>
-                    <a href="#">about</a>
+                    <Link to="/about">about</Link>
                 </li>
                 <li>
-                    <a href="#">blog</a>
+                    <Link to="/blog">blog</Link>
                 </li>
                 <li>
-                    <a href="#">projects</a>
+                    <Link to="/projects">projects</Link>
                 </li>
                 <li>
-                    <a href="#">contact</a>
+                    <Link to="/contact">contact</Link>
                 </li>
             </ul>
         </nav>
