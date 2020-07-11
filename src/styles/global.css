@@ -11,8 +11,8 @@
     --sm-spacing: calc(var(--base-spacing) / 2); /*  10 */
     --xs-spacing: calc(var(--sm-spacing) / 2); /* 5  */
     --xxs-spacing: calc(var(--xs-spacing) / 2); /* 2.5 */
-    --lg-spacing: calc(var(--base-spacing * 2)); /* 40  */
-    --x-lg-spacing: calc(var(--lg-spacing * 2)); /* 80 */
+    --lg-spacing: calc(var(--base-spacing) * 2 ); /* 40  */
+    --x-lg-spacing: calc(var(--lg-spacing) * 2); /* 80 */
     --xx-lg-spacing: calc(var(--x-lg-spacing * 2)); /* 160 */
     --letter-spacing: 0.01rem;
 
