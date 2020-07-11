@@ -13,14 +13,24 @@
     --xxs-spacing: calc(var(--xs-spacing) / 2); /* 2.5 */
     --lg-spacing: calc(var(--base-spacing) * 2 ); /* 40  */
     --x-lg-spacing: calc(var(--lg-spacing) * 2); /* 80 */
-    --xx-lg-spacing: calc(var(--x-lg-spacing * 2)); /* 160 */
+    --xx-lg-spacing: calc(var(--x-lg-spacing) * 2); /* 160 */
+
+    --section-spacing: calc( var(--x-lg-spacing) * 2);
+
     --letter-spacing: 0.01rem;
+
+    /* Breakpoints */
+    --header-breakpoint: 65.0rem;
+
 
     /* Colors */
     --green: #59775D;
+    --forest: #243527;
     --olive: #9DA47A;
     --light-olive: #d5dcb4;
+    --lightest-olive: #e1e4d2;
     --chocolate: #B79074;
+    --dark-chocolate: #795d49;
     --light-chocolate: #d4bcab;
     --white: #ffffff;
 

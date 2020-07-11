@@ -1,3 +1,27 @@
+section {
+  background: var(--lightest-olive);
+  padding: var(--base-spacing);
+  color: var(--forest);
+  margin: var(--section-spacing) 0;
+  width: 70%;
+}
+
+.section__sub_container {
+
+}
+
 .red {
-  border: 2px solid red;
+  
+}
+
+@media (max-width: 1050px) { 
+  section {
+    width: 85%;
+  }
+}
+
+@media (max-width: 650px) { 
+  section {
+    width: 100%;
+  }
 }

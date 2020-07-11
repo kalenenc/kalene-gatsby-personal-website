@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect} from "react"
 import NameTag from './nametag'
+import HorizontalRule from './horizontalrule'
 import Navigation from './navigation'
 import headerStyles from './style-modules/header.module.css'
 import MeAndReese from '../images/me-and-reese-icon.jpg'
@@ -114,7 +115,7 @@ function Header() {
                 </div>
             </div>
 
-            <hr/>
+            <HorizontalRule ></HorizontalRule>
 
         </header>
     )
