@@ -20,6 +20,11 @@ function Header() {
     const imageRef = useRef();
     const imageContainer = useRef();
 
+    const hrConfig = {
+        width: '75%',
+        color: 'var(--olive)',
+    }
+
     useEffect(() => {
 
         let newState;
@@ -37,7 +42,6 @@ function Header() {
             }
     
             setSvgConfig(newState);
-            //console.log('handleResize called')
         }
 
         setTimeout(()=> {
@@ -65,6 +69,7 @@ function Header() {
                 </div>
 
                 <div ref={imageContainer} className={headerStyles.header__image_container}> 
+                        {/* TODO: refactor svgs into its own component */}
                         <svg 
                             className={headerStyles.svg__one} 
                             width={svgConfig.svgSize} 
@@ -115,7 +120,7 @@ function Header() {
                 </div>
             </div>
 
-            <HorizontalRule ></HorizontalRule>
+            <HorizontalRule hrConfig={hrConfig}></HorizontalRule>
 
         </header>
     )

@@ -1,6 +1,5 @@
-.idk {
-  border-top: 7px dotted var(--olive);
-  width: 75%;
+.hr {
+  position: relative;
   margin: 0 auto;
   background: transparent;
   padding-bottom: 5.6rem;

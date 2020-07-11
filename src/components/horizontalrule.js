@@ -2,8 +2,16 @@ import React from "react"
 import horizontalruleStyles from "./style-modules/horizontalrule.module.css"
 
 
-const HorizontalRule = _props => (
-    <hr className={horizontalruleStyles.idk}/>
+const HorizontalRule = props => (
+    <hr 
+        className={horizontalruleStyles.hr}
+        style={
+            {
+                borderTop: `0.7rem dotted ${props.hrConfig.color}`,
+                width: props.hrConfig.width
+            }
+        }
+    />
 )
 
 export default HorizontalRule;
