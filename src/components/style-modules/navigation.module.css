@@ -2,6 +2,11 @@ nav {
     margin-bottom: var(--xs-spacing);
 }
 
+.nav__link {
+    color: var(--white);
+    text-decoration: none;
+}
+
 .nav__list {
     list-style-type: none;
     padding: 0;

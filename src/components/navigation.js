@@ -22,16 +22,16 @@ const Navigation = _props => {
             </div>
             <ul ref={ulRef} className={`${navigationStyles.nav__list} ${navigationStyles[heightClass]}`}>
                 <li>
-                    <Link to="/about">about</Link>
+                    <Link to="/about" className={navigationStyles.nav__link}>about</Link>
                 </li>
                 <li>
-                    <Link to="/blog">blog</Link>
+                    <Link to="/blog" className={navigationStyles.nav__link}>blog</Link>
                 </li>
                 <li>
-                    <Link to="/projects">projects</Link>
+                    <Link to="/projects" className={navigationStyles.nav__link}>projects</Link>
                 </li>
                 <li>
-                    <Link to="/contact">contact</Link>
+                    <Link to="/contact" className={navigationStyles.nav__link}>contact</Link>
                 </li>
             </ul>
         </nav>

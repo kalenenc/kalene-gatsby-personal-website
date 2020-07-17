@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  width: max-content;
+  margin-bottom: var(--section-spacing);
+
+}
+
+.skill__container h3 {
+  text-align: right;
+}
+
+.grid {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.half {
+  /* border: 2px solid red; */
+  padding: var(--base-spacing);
+}

@@ -1,10 +1,13 @@
-section {
+.quickLinks__section {
   background: var(--lightest-olive);
-  padding: var(--base-spacing);
   color: var(--forest);
-  margin: var(--section-spacing) 0;
   width: 70%;
-  position: relative;
+
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--dark-chocolate);
 }
 
 .section__sub_container {
@@ -15,27 +18,15 @@ svg {
   position: absolute;
 }
 
-.svg__one {
-
-}
-
-.svg__two {
-  
-}
-
-.svg__three {
-  
-}
-
 
 @media (max-width: 1050px) { 
-  section {
+  .quickLinks__section {
     width: 85%;
   }
 }
 
 @media (max-width: 650px) { 
-  section {
+  .quickLinks__section {
     width: 100%;
   }
 }

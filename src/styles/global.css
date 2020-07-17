@@ -15,7 +15,7 @@
     --x-lg-spacing: calc(var(--lg-spacing) * 2); /* 80 */
     --xx-lg-spacing: calc(var(--x-lg-spacing) * 2); /* 160 */
 
-    --section-spacing: calc( var(--x-lg-spacing) * 2);
+    --section-spacing: calc( var(--x-lg-spacing) * 4);
 
     --letter-spacing: 0.01rem;
 
@@ -43,6 +43,12 @@ html body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+section {
+  position: relative;
+  padding: var(--base-spacing);
+  margin-bottom: var(--section-spacing);
+}
+
 h2, h3, h4, h5, h6, p, a {
   /* font-family: 'Varela Round', sans-serif; */
   font-family: 'Courier New', Courier, monospace;
@@ -58,6 +64,28 @@ a {
 }
 
 /* -------- Lists -------- */
+
+
+
+.sm--spacing {
+  margin-bottom: var(--sm-spacing);
+}
+
+.xs--spacing {
+  margin-bottom: var(--xs-spacing);
+}
+
+.base--spacing {
+  margin-bottom: var(--base-spacing);
+}
+
+.lg--spacing {
+  margin-bottom: var(--lg-spacing);
+}
+
+.x-lg--spacing {
+  margin-bottom: var(--x-lg-spacing);
+}
 
 .list--blank {
   list-style-type: none;

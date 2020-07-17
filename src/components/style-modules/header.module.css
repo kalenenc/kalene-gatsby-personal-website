@@ -2,6 +2,7 @@ header {
   background: var(--green);
   color: var(--white);
   padding-bottom: 5.6rem;
+  margin-bottom: var(--section-spacing);
 }
 
 h2 {
@@ -48,17 +49,8 @@ svg {
   margin: auto;
 }
 
-
-/* hr {
-  border-top: 7px dotted var(--olive);
-  width: 75%;
-  margin: 0 auto;
-  background: transparent;
-  padding-bottom: 5.6rem;
-} */
-
 .hr__margin {
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
 }
 
 

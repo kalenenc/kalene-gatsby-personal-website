@@ -1,15 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
 import QuickLinks from "../components/quicklinks"
 import WhatImUpTo from '../components/whatimupto'
 
 class IndexPage extends React.Component {
   render() {
-    console.log('this.props - index.js', this.props)
+    // console.log('this.props - index.js', this.props)
     const siteTitle = this.props.data.site.siteMetadata.title
     
 
@@ -19,15 +17,11 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`Kalene Csefalvay`, `Kalene`, `Csefalvay`, `frontend developer`]}
         />
-       
-        <p>This is just some text</p>
+
+        <WhatImUpTo></WhatImUpTo>
 
         <QuickLinks></QuickLinks>
-        <WhatImUpTo></WhatImUpTo>
-        
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
+
       </Layout>
     )
   }

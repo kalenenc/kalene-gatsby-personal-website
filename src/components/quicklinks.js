@@ -22,13 +22,13 @@ const QuickLinks = props => {
     // After the page is loaded, get the actual pixel value of the width
     // of the section, minus a few pixels
     // Apply that width to all of the SVGs
-  
+
     const handleResize = () => {
       const sectionWidth = sectionRef.current.getBoundingClientRect().width
       const svgWidth = sectionWidth - sectionWidth * 0.25
       // @TODO: pass in padding to each section as a prop
-      const topOffset = (props.padding || 35);
-      const leftOffset = props.padding || 35;
+      const topOffset = props.padding || 35
+      const leftOffset = props.padding || 35
 
       const newState = {
         svgWidth,
@@ -39,36 +39,25 @@ const QuickLinks = props => {
       }
 
       setSvgConfig(newState)
-
     }
 
     setTimeout(() => {
       handleResize()
     }, 100)
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener("resize", handleResize)
 
-    
-    
-    // subtract 50 pixels
-
-    // Not necessary to do in an effect, but for each individual SVG,
-    // set a different, bottom, left, etc offset
   }, [])
 
   return (
-    <section ref={sectionRef} className={quickLinkStyles.red}>
+    <section ref={sectionRef} className={quickLinkStyles.quickLinks__section }>
       <svg
-        className="svg__one"
         width={`${svgConfig.svgWidth}px`}
         height="200px"
         opacity="0.1"
-        style={
-          {
-            bottom: `${svgConfig.svgPosition.topOffset }px`,
-
-          }
-        }
+        style={{
+          bottom: `${svgConfig.svgPosition.topOffset}px`,
+        }}
       >
         <rect
           width={`${svgConfig.svgWidth}px`}
@@ -77,20 +66,14 @@ const QuickLinks = props => {
         />
       </svg>
 
-
-
       <svg
-        className="svg__two"
         width={`${svgConfig.svgWidth}px`}
         height="200px"
         opacity="0.1"
-        style={
-          {
-            bottom: `${svgConfig.svgPosition.topOffset * 2}px`,
-            right: `${svgConfig.svgPosition.leftOffset}px`,
-          
-          }
-        }
+        style={{
+          bottom: `${svgConfig.svgPosition.topOffset * 2}px`,
+          right: `${svgConfig.svgPosition.leftOffset}px`,
+        }}
       >
         <rect
           width={`${svgConfig.svgWidth}px`}
@@ -99,16 +82,13 @@ const QuickLinks = props => {
         />
       </svg>
       <svg
-        className="svg__three"
         width={`${svgConfig.svgWidth}px`}
         height="200px"
         opacity="0.1"
-        style={
-          {
-            bottom: `${svgConfig.svgPosition.topOffset * 3}px`,
-            left: `${svgConfig.svgPosition.leftOffset * 3}px`,
-          }
-        }
+        style={{
+          bottom: `${svgConfig.svgPosition.topOffset * 3}px`,
+          left: `${svgConfig.svgPosition.leftOffset * 3}px`,
+        }}
       >
         <rect
           width={`${svgConfig.svgWidth}px`}
@@ -121,28 +101,41 @@ const QuickLinks = props => {
 
       <h4>where to find me:</h4>
       <ul>
-        <li>twitter</li>
-        <li>linked in</li>
-        <li>github</li>
-        <li>codepen</li>
+        <li>
+          <a href="https://twitter.com/kalenenc" className={quickLinkStyles.link}>Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kalenenc/" className={quickLinkStyles.link}>LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/kalenenc" className={quickLinkStyles.link}>Github</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/kalenenc" className={quickLinkStyles.link}>CodePen</a>
+        </li>
+        <li>
+          <a href="https://dev.to/kalenenc" className={quickLinkStyles.link}>dev.to</a>
+        </li>
       </ul>
 
-      <h4>interested in learning to code?</h4>
+      <h4>Interested in learning to code?</h4>
 
       <p>
-        read about my journey and tips here <a href="#">here</a>. it's a few
+        Read about my journey and tips here <a href="#" className={quickLinkStyles.link}>here</a>. It's a few
         years old and perhaps a little cheesy, but my advice still stands.
       </p>
 
-      <h5>UI resources</h5>
-      <ul>
-        <li>free code camp</li>
-        <li>gwen faraday</li>
-        <li>odin project</li>
-        <li>academy pittsburgh</li>
-      </ul>
+      <p>
+        For a full list of resources on my personal recommendations on learning
+        to code, please check out the following <a href="#" className={quickLinkStyles.link}>page</a>.
+      </p>
+      <p>
+        Please note I do not, and never have, recieved any money for
+        recommending any of these resources; they are simply what I found to be
+        helpful on my journey.
+      </p>
     </section>
   )
 }
 
-export default QuickLinks
+export default QuickLinks;
