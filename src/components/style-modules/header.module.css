@@ -1,6 +1,7 @@
 header {
   background: var(--green);
   color: var(--white);
+  padding-bottom: 5.6rem;
 }
 
 h2 {

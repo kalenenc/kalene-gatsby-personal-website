@@ -27,13 +27,12 @@ function Header() {
 
     useEffect(() => {
 
-        let newState;
         const handleResize = () => {
             const svgSize = `${imageRef.current.getBoundingClientRect().height}px`;
             const topOffset = imageRef.current.offsetTop;
             const leftOffset = imageRef.current.offsetLeft;
     
-            newState = {
+            const newState = {
                 svgSize,
                 svgPosition: {
                     topOffset,
@@ -80,7 +79,6 @@ function Header() {
                                     left: `${svgConfig.svgPosition.leftOffset + 40}px` 
                                 }
                             }
-                            xmlns="http://www.w3.org/2000/svg" 
                             opacity="0.1"
                         >
                             <rect width={svgConfig.svgSize} height={svgConfig.svgSize} fill="var(--light-olive)" />
@@ -95,7 +93,6 @@ function Header() {
                                     left: `${svgConfig.svgPosition.leftOffset + 85}px` 
                                 } 
                             }
-                            xmlns="http://www.w3.org/2000/svg" 
                             opacity="0.1"
                         >
                             <rect width={svgConfig.svgSize} height={svgConfig.svgSize} fill="var(--light-olive)" />
@@ -110,7 +107,6 @@ function Header() {
                                     left: `${svgConfig.svgPosition.leftOffset - 40}px` 
                                 }
                             }
-                            xmlns="http://www.w3.org/2000/svg" 
                             opacity="0.1"
                         >
                             <rect width={svgConfig.svgSize} height={svgConfig.svgSize} fill="var(--light-olive)" />
