@@ -2,6 +2,7 @@ import React from "react"
 //import { Link } from "gatsby"
 import Header from "./header"
 import Footer from './footer'
+import Navigation from './navigation'
 
 //import { rhythm, scale } from "../utils/typography"
 
@@ -20,8 +21,8 @@ class Layout extends React.Component {
     return (
       <div className="padding">
         <div>
-        { location.pathname === rootPath &&
-          <Header></Header>
+        { location.pathname === rootPath ? <Header></Header> :  <Navigation></Navigation>
+    
         }
 
           <main>{children}</main>

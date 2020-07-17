@@ -1,11 +1,14 @@
 import React from "react"
+import Layout from "../components/layout"
 
-const Contact = _props => (
+const Contact = props => {
+  return (
+    <Layout location={props.location}>
+      <section>
+        <h3>Contact works</h3>
+      </section>
+    </Layout>
+  )
+}
 
-
-  <section>
-    <h3>Contact works</h3>
-  </section>
-)
-
-export default Contact;
+export default Contact

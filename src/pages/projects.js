@@ -1,11 +1,14 @@
 import React from "react"
+import Layout from "../components/layout"
 
-const Projects = _props => (
+const Projects = props => {
+  return (
+    <Layout location={props.location}>
+      <section>
+        <h3>Projects works</h3>
+      </section>
+    </Layout>
+  )
+}
 
-
-  <section>
-    <h3>Projects works</h3>
-  </section>
-)
-
-export default Projects;
+export default Projects
