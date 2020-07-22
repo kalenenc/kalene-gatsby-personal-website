@@ -5,8 +5,6 @@ import Footer from "./footer"
 import Navigation from "./navigation"
 import NameTag from "./nametag"
 
-//import { rhythm, scale } from "../utils/typography"
-
 class Layout extends React.Component {
   render() {
     const {

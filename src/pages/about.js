@@ -1,11 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import pagesStyles from '../components/style-modules/pages.module.css'
 
 const About = props => {
   return (
     <Layout location={props.location}>
-      <section>
-        <h3>About me</h3>
+      <section className={pagesStyles.section}>
+        <h2>About me</h2>
         <p>
           As some of you may know, I made the journey into transitioning into
           tech in 2015 after graduating college with a nursing degree. I

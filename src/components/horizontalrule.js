@@ -7,6 +7,7 @@ const HorizontalRule = props => (
         className={horizontalruleStyles.hr}
         style={
             {
+                border: 'transparent',
                 borderTop: `0.7rem dotted ${props.hrConfig.color}`,
                 width: props.hrConfig.width
             }

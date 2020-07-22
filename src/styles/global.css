@@ -7,15 +7,15 @@
 
 :root {
     /* Spacing */
-    --base-spacing: 2rem; /* 20px */
-    --sm-spacing: calc(var(--base-spacing) / 2); /*  10 */
-    --xs-spacing: calc(var(--sm-spacing) / 2); /* 5  */
-    --xxs-spacing: calc(var(--xs-spacing) / 2); /* 2.5 */
-    --lg-spacing: calc(var(--base-spacing) * 2 ); /* 40  */
-    --x-lg-spacing: calc(var(--lg-spacing) * 2); /* 80 */
-    --xx-lg-spacing: calc(var(--x-lg-spacing) * 2); /* 160 */
+    --base-spacing: 2rem; /* 32px */
+    --sm-spacing: calc(var(--base-spacing) / 2); /*  16 */
+    --xs-spacing: calc(var(--sm-spacing) / 2); /* 8  */
+    --xxs-spacing: calc(var(--xs-spacing) / 2); /* 4 */
+    --lg-spacing: calc(var(--base-spacing) * 2 ); /* 64  */
+    --x-lg-spacing: calc(var(--lg-spacing) * 2); /* 128 */
+    --xx-lg-spacing: calc(var(--x-lg-spacing) * 2); /* 256 */
 
-    --section-spacing: calc( var(--x-lg-spacing) * 4);
+    --section-spacing: calc( var(--x-lg-spacing) * 4); /* 512 */
 
     --letter-spacing: 0.01rem;
 
@@ -45,8 +45,9 @@ html body {
 
 section {
   position: relative;
-  padding: var(--base-spacing);
+  padding: var(--base-spacing) var(--sm-spacing);
   margin-bottom: var(--section-spacing);
+  color: var(--forest);
 }
 
 h2, h3, h4, h5, h6, p, a {
@@ -59,12 +60,15 @@ h3 {
   margin-top: 0;
 }
 
+li {
+  line-height: 30px;
+}
+
 a {
   color: var(--light-olive);
 }
 
 /* -------- Lists -------- */
-
 
 
 .sm--spacing {

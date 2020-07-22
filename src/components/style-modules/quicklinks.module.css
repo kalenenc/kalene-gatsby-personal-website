@@ -1,8 +1,13 @@
 .quickLinks__section {
+  padding: var(--base-spacing);
   background: var(--lightest-olive);
   color: var(--forest);
   width: 70%;
 
+}
+
+.container {
+  margin-bottom: 84px;
 }
 
 .link {

@@ -21,6 +21,11 @@ nav {
     background: var(--chocolate);
     color: var(--white);
     letter-spacing: var(--letter-spacing);
+    line-height: 18.4px;
+}
+
+.nav__list li a:hover {
+    font-weight: bold;
 }
 
 .nav__list li:nth-child(2n) {
