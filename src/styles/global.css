@@ -15,7 +15,7 @@
     --x-lg-spacing: calc(var(--lg-spacing) * 2); /* 128 */
     --xx-lg-spacing: calc(var(--x-lg-spacing) * 2); /* 256 */
 
-    --section-spacing: calc( var(--x-lg-spacing) * 4); /* 512 */
+    --section-spacing: var(--x-lg-spacing); /* 256 */
 
     --letter-spacing: 0.01rem;
 

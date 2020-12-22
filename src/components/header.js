@@ -9,13 +9,11 @@ import MeAndReese from "../images/me-and-reese-icon.jpg"
 function Header() {
   // Proposed breakpoint for header: 980px
 
-  const [svgConfig, setSvgConfig] = useState({
-    svgSize: null,
-    svgPosition: {
-      topOffset: null,
-      leftOffset: null,
-    },
-  })
+
+  const [svgSize, setSvgSize] = useState(0)
+  const [topOffset, setTopOffset] = useState(0)
+  const [leftOffset, setLeftOffset] = useState(0)
+  
   const imageRef = useRef()
   const imageContainer = useRef()
 
@@ -27,19 +25,11 @@ function Header() {
   useEffect(() => {
     const handleResize = () => {
       if (imageRef.current) {
-        const svgSize = `${imageRef.current.getBoundingClientRect().height}px`
-        const topOffset = imageRef.current.offsetTop
-        const leftOffset = imageRef.current.offsetLeft
 
-        const newState = {
-          svgSize,
-          svgPosition: {
-            topOffset,
-            leftOffset,
-          },
-        }
+        setSvgSize(`${imageRef.current.getBoundingClientRect().height}px`)
+        setTopOffset(imageRef.current.offsetTop)
+        setLeftOffset(imageRef.current.offsetLeft)
 
-        setSvgConfig(newState)
       }
     }
 
@@ -77,49 +67,49 @@ function Header() {
           {/* TODO: refactor svgs into its own component */}
           <svg
             className={headerStyles.svg__one}
-            width={svgConfig.svgSize}
-            height={svgConfig.svgSize}
+            width={svgSize}
+            height={svgSize}
             style={{
-              top: `${svgConfig.svgPosition.topOffset - 35}px`,
-              left: `${svgConfig.svgPosition.leftOffset + 40}px`,
+              top: `${topOffset - 35}px`,
+              left: `${leftOffset + 40}px`,
             }}
             opacity="0.1"
           >
             <rect
-              width={svgConfig.svgSize}
-              height={svgConfig.svgSize}
+              width={svgSize}
+              height={svgSize}
               fill="var(--light-olive)"
             />
           </svg>
           <svg
             className={headerStyles.svg__two}
-            width={svgConfig.svgSize}
-            height={svgConfig.svgSize}
+            width={svgSize}
+            height={svgSize}
             style={{
-              top: `${svgConfig.svgPosition.topOffset + 40}px`,
-              left: `${svgConfig.svgPosition.leftOffset + 85}px`,
+              top: `${topOffset + 40}px`,
+              left: `${leftOffset + 85}px`,
             }}
             opacity="0.1"
           >
             <rect
-              width={svgConfig.svgSize}
-              height={svgConfig.svgSize}
+              width={svgSize}
+              height={svgSize}
               fill="var(--light-olive)"
             />
           </svg>
           <svg
             className={headerStyles.svg__three}
-            width={svgConfig.svgSize}
-            height={svgConfig.svgSize}
+            width={svgSize}
+            height={svgSize}
             style={{
-              top: `${svgConfig.svgPosition.topOffset + 25}px`,
-              left: `${svgConfig.svgPosition.leftOffset - 40}px`,
+              top: `${topOffset + 25}px`,
+              left: `${leftOffset - 40}px`,
             }}
             opacity="0.1"
           >
             <rect
-              width={svgConfig.svgSize}
-              height={svgConfig.svgSize}
+              width={svgSize}
+              height={svgSize}
               fill="var(--light-olive)"
             />
           </svg>
