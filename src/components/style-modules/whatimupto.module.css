@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   margin-bottom: var(--section-spacing);
-  width: max-content;
+  width: 100%;
 
 }
 

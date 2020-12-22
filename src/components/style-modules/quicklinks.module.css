@@ -32,6 +32,6 @@ svg {
 
 @media (max-width: 650px) { 
   .quickLinks__section {
-    width: 100%;
+    width: auto;
   }
 }

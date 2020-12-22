@@ -48,10 +48,10 @@ function Header() {
     }, 100)
 
     window.addEventListener("resize", () => {
-      console.log("window resized")
+      // console.log("window resized")
       handleResize()
     })
-    console.log("header rendered")
+    // console.log("header rendered")
   }, [])
 
   return (
@@ -66,9 +66,6 @@ function Header() {
             <p>
               I’m Kalene, a frontend developer and lifelong-learner with a
               desire to help support others in, or looking to get into tech.
-            </p>
-            <p>
-              Read more about my journey <Link to="/about">here</Link>.
             </p>
           </div>
         </div>

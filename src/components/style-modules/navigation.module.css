@@ -32,44 +32,26 @@ nav {
     background: var(--olive);
 }
 
-.nav_button__container {
-    display: none;
-}
-
-button {
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: var(--base-spacing);
-    padding: var(--xs-spacing);
-}
-
-
-
-
-/* Hamburger menu on mobile device */
-@media (max-width: 470px) {
+@media (max-width: 650px) { 
     .nav__list {
-        /* border: 2px solid red; */
-        display: block;
-        height: 0;
-        overflow: hidden;
-        transition: all 0.5s;
-    }
+        justify-content: center;
 
-    .nav__list li {
-        margin: 0;
-        /* margin-bottom: 0.2rem; */
     }
-
-    .nav_button__container {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .fullHeight {
-        height: auto;
-        padding-bottom: var(--sm-spacing);
-        transition: all 0.5s;
+    .nav__list li:last-child {
+        margin-right: 0;
     }
 }
+
+@media (max-width: 380px) {
+    .nav__list {
+        justify-content: space-between;
+    }
+
+    .nav__list li,
+    .nav__list li:last-child  {
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+

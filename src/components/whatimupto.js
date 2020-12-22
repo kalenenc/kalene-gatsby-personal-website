@@ -6,7 +6,6 @@ const WhatImUpTo = _props => (
     <div className={`x-lg--spacing ${whatImUpToStyles.container}`}>
       <h3>Currently I'm...</h3>
       <ul>
-        <li>Open to exploring new work opportunities</li>
         <li>Deep diving into advanced React and GraphQL topics</li>
         <li>Digging deeper into API development</li>
         <li>Learning Python</li>

@@ -17,21 +17,15 @@ const Navigation = _props => {
 
     return (
         <nav>
-            <div className={navigationStyles.nav_button__container }>
-                <button onClick={toggleNav} aria-label="navigation menu" aria-expanded={!!heightClass}>☰</button>
-            </div>
             <ul ref={ulRef} className={`${navigationStyles.nav__list} ${navigationStyles[heightClass]}`}>
                 <li>
+                    <Link to="/blog" className={navigationStyles.nav__link}>articles</Link>
+                </li>
+                <li>
+                    <Link to="/resources" className={navigationStyles.nav__link}>resources</Link>
+                </li>
+                <li>
                     <Link to="/about" className={navigationStyles.nav__link}>about</Link>
-                </li>
-                <li>
-                    <Link to="/blog" className={navigationStyles.nav__link}>blog</Link>
-                </li>
-                <li>
-                    <Link to="/projects" className={navigationStyles.nav__link}>projects</Link>
-                </li>
-                <li>
-                    <Link to="/contact" className={navigationStyles.nav__link}>contact</Link>
                 </li>
             </ul>
         </nav>
