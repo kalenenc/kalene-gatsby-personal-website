@@ -1,19 +1,17 @@
 import React, { useState, useRef, useEffect } from "react"
-import { Link } from "gatsby"
-import NameTag from "./nametag"
-import HorizontalRule from "./horizontalrule"
-import Navigation from "./navigation"
+import NameTag from "./NameTag"
+import HorizontalRule from "./HorizontalRule"
+import Navigation from "./Navigation"
 import headerStyles from "./style-modules/header.module.css"
 import MeAndReese from "../images/me-and-reese-icon.jpg"
 
 function Header() {
   // Proposed breakpoint for header: 980px
 
-
   const [svgSize, setSvgSize] = useState(0)
   const [topOffset, setTopOffset] = useState(0)
   const [leftOffset, setLeftOffset] = useState(0)
-  
+
   const imageRef = useRef()
   const imageContainer = useRef()
 

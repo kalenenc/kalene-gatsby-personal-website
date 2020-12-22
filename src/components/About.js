@@ -12,7 +12,7 @@ import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 
-function Bio() {
+function About() {
   return (
     <StaticQuery
       query={bioQuery}
@@ -72,4 +72,4 @@ const Container = styled.div`
   display: flex;
 `
 
-export default Bio
+export default About
