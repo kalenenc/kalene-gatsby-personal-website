@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ArticlesPreview from "../components/ArticlesPreview"
+import Skills from "../components/Skills"
 
 class IndexPage extends React.Component {
   render() {
@@ -13,12 +14,17 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`Kalene Csefalvay`, `Kalene`, `Csefalvay`, `frontend developer`]}
+          keywords={[
+            `Kalene Csefalvay`,
+            `Kalene`,
+            `Csefalvay`,
+            `frontend developer`,
+          ]}
         />
 
-        <ArticlesPreview posts={posts}  />
+        <ArticlesPreview posts={posts} />
 
-
+        <Skills />
       </Layout>
     )
   }

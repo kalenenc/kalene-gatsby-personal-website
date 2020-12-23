@@ -11,14 +11,14 @@ const ArticlesPreview = props => {
   const hrConfig = {
     width: "70%",
     color: "var(--green)",
-    size: "0.5rem",
-    paddingBottom: "var(--lg-spacing)",
+    size: "0.4rem",
+    paddingBottom: "var(--base-spacing)",
   }
 
   return (
     <section>
-      <div className={articlesPreviewStyles.heading_container}>
-        <h2>Recent Articles</h2>
+      <div className="heading_container">
+        <h3>Recent Articles</h3>
         <Link className={articlesPreviewStyles.view_all} to="/blog">
           View all
         </Link>

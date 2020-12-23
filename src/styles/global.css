@@ -60,6 +60,7 @@ a {
 
 h3 {
   margin-top: 0;
+  color: var(--light-chocolate);
 }
 
 li {
@@ -68,6 +69,13 @@ li {
 
 a {
   color: var(--light-olive);
+}
+
+.heading_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--xs-spacing);
 }
 
 /* -------- Lists -------- */
