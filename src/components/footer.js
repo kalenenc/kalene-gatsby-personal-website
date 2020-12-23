@@ -10,11 +10,32 @@ const Footer = _props => {
     return (
         <footer className={footerStyles.red}>
             <ul>
-                <li><FaTwitter /></li>
-                <li><FaLinkedin /></li>
-                <li><FaGithub /></li>
-                <li><FaCodepen /></li>
-                <li><FaDev /></li>
+                <li>
+                    <a href="https://www.twitter.com/kalenenc">
+                        <FaTwitter />
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kalenenc/">
+                        <FaLinkedin />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/kalenenc">
+                        <FaGithub />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/kalenenc">
+                        <FaCodepen />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dev.to/kalenenc">
+                        <FaDev />      
+                    </a>
+                </li>
             </ul>
             <p>&copy; {fullYear} Kalene Csefalvay </p>
         </footer>
