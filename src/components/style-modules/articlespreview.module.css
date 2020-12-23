@@ -1,0 +1,21 @@
+section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.heading_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view_all {
+  margin-left: var(--sm-spacing);
+}
+
+/* Removes image from header */
+@media (max-width: 650px) {
+  section {
+    width: 90%;
+  }
+}

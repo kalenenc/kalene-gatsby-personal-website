@@ -1,7 +1,7 @@
 header {
   background: var(--green);
   color: var(--white);
-  /* padding-bottom: 5.6rem; */
+  padding-bottom: 5.6rem;
   margin-bottom: var(--section-spacing);
 }
 
@@ -10,7 +10,6 @@ h2 {
 }
 
 .header__description_container {
-  /* border: 2px solid purple; */
   padding: 4rem;
   display: grid;
   grid-template-columns: 40% 40%;
@@ -18,7 +17,6 @@ h2 {
 }
 
 .header__description {
-  /* border: 2px solid red; */
   display: grid;
   padding: var(--sm-spacing);
   padding-bottom: 2.8rem;
@@ -31,7 +29,6 @@ h2 {
 
 .header__image_container {
   position: relative;
-  /* border: 2px solid blue; */
   display: grid;
   height: 100%;
 }
@@ -53,10 +50,8 @@ svg {
   margin-bottom: 30rem;
 }
 
-
-
 /* Removes image from header */
-@media (max-width: 650px) { 
+@media (max-width: 650px) {
   .header__description_container {
     grid-template-columns: 100%;
     padding: 1rem;

@@ -7,16 +7,8 @@ import NameTag from "./NameTag"
 
 class Layout extends React.Component {
   render() {
-    const {
-      location,
-      // title,
-      children,
-    } = this.props
+    const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    // const blogPath = `${__PATH_PREFIX__}/blog/`
-    // let header
-
-    //if (location.pathname === rootPath)
 
     return (
       <div className="padding">
@@ -26,7 +18,7 @@ class Layout extends React.Component {
           ) : (
             <>
               <Navigation></Navigation>
-              <NameTag location={location.pathname}></NameTag> 
+              <NameTag location={location.pathname}></NameTag>
             </>
           )}
 

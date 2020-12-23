@@ -2,12 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import QuickLinks from "../components/quicklinks"
-import WhatImUpTo from '../components/whatimupto'
+import ArticlesPreview from "../components/ArticlesPreview"
 
 class IndexPage extends React.Component {
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
+    const posts = this.props.data.allMdx.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -16,9 +16,8 @@ class IndexPage extends React.Component {
           keywords={[`Kalene Csefalvay`, `Kalene`, `Csefalvay`, `frontend developer`]}
         />
 
-        <WhatImUpTo></WhatImUpTo>
+        <ArticlesPreview posts={posts}  />
 
-        <QuickLinks></QuickLinks>
 
       </Layout>
     )
@@ -32,6 +31,21 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
       }
     }
   }

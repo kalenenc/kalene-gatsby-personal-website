@@ -5,7 +5,7 @@ import Navigation from "./Navigation"
 import headerStyles from "./style-modules/header.module.css"
 import MeAndReese from "../images/me-and-reese-icon.jpg"
 
-const Header = (props) => {
+const Header = props => {
   // Proposed breakpoint for header: 980px
 
   const [svgSize, setSvgSize] = useState(0)
@@ -18,16 +18,15 @@ const Header = (props) => {
   const hrConfig = {
     width: "75%",
     color: "var(--olive)",
+    size: "0.7rem",
   }
 
   useEffect(() => {
     const handleResize = () => {
       if (imageRef.current) {
-
         setSvgSize(`${imageRef.current.getBoundingClientRect().height}px`)
         setTopOffset(imageRef.current.offsetTop)
         setLeftOffset(imageRef.current.offsetLeft)
-
       }
     }
 
@@ -73,11 +72,7 @@ const Header = (props) => {
             }}
             opacity="0.1"
           >
-            <rect
-              width={svgSize}
-              height={svgSize}
-              fill="var(--light-olive)"
-            />
+            <rect width={svgSize} height={svgSize} fill="var(--light-olive)" />
           </svg>
           <svg
             className={headerStyles.svg__two}
@@ -89,11 +84,7 @@ const Header = (props) => {
             }}
             opacity="0.1"
           >
-            <rect
-              width={svgSize}
-              height={svgSize}
-              fill="var(--light-olive)"
-            />
+            <rect width={svgSize} height={svgSize} fill="var(--light-olive)" />
           </svg>
           <svg
             className={headerStyles.svg__three}
@@ -105,11 +96,7 @@ const Header = (props) => {
             }}
             opacity="0.1"
           >
-            <rect
-              width={svgSize}
-              height={svgSize}
-              fill="var(--light-olive)"
-            />
+            <rect width={svgSize} height={svgSize} fill="var(--light-olive)" />
           </svg>
           <img
             ref={imageRef}
