@@ -22,11 +22,11 @@ class Layout extends React.Component {
       <div className="padding">
         <div>
           {location.pathname === rootPath ? (
-            <Header></Header>
+            <Header location={location.pathname}></Header>
           ) : (
             <>
               <Navigation></Navigation>
-              <NameTag></NameTag> 
+              <NameTag location={location.pathname}></NameTag> 
             </>
           )}
 

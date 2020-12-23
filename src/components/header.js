@@ -5,7 +5,7 @@ import Navigation from "./Navigation"
 import headerStyles from "./style-modules/header.module.css"
 import MeAndReese from "../images/me-and-reese-icon.jpg"
 
-function Header() {
+const Header = (props) => {
   // Proposed breakpoint for header: 980px
 
   const [svgSize, setSvgSize] = useState(0)
@@ -45,7 +45,7 @@ function Header() {
   return (
     <header>
       <Navigation></Navigation>
-      <NameTag></NameTag>
+      <NameTag location={props.location}></NameTag>
 
       <div className={headerStyles.header__description_container}>
         <div className={headerStyles.header__description}>
