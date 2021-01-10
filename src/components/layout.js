@@ -12,7 +12,7 @@ class Layout extends React.Component {
 
     return (
       <div className="padding">
-        <div>
+        <div className="container">
           {location.pathname === rootPath ? (
             <Header location={location.pathname}></Header>
           ) : (

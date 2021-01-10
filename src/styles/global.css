@@ -2,6 +2,13 @@
   padding: 1rem;
 }
 
+.container {
+  flex: 1;
+  display: flex;
+  min-height: calc(100vh - 178px);
+  flex-direction: column;
+}
+
 /* Colors */
 
 :root {
