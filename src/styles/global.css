@@ -36,7 +36,6 @@
 html body {
   font-size: var(--sm-spacing);
   font-family: "Varela Round", sans-serif;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 section {
@@ -54,7 +53,6 @@ h6,
 p,
 a {
   font-family: "Varela Round", sans-serif;
-  /* font-family: 'Courier New', Courier, monospace; */
   position: relative;
 }
 

@@ -1,0 +1,12 @@
+.link {
+  padding: var(--xs-spacing) var(--sm-spacing);
+  background: var(--green);
+  color: var(--white);
+  letter-spacing: var(--letter-spacing);
+  line-height: 18.4px;
+  display: inline-block;
+}
+
+.section {
+  text-align: center;
+}

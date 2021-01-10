@@ -1,4 +1,7 @@
 import React from "react"
+import quickLinkStyles from "./style-modules/skills.module.css"
+
+// ----- Icons -----
 import HorizontalRule from "./HorizontalRule"
 import AngularIcon from "../images/angular.png"
 import BootstrapIcon from "../images/bootstrap.png"
@@ -44,115 +47,115 @@ const Skills = _props => {
 
       <HorizontalRule hrConfig={hrConfig} />
 
-      <ul>
+      <ul className={quickLinkStyles.skillList}>
         <li>
           <img src={JavaScriptIcon} alt="" />
-          JavaScript
+          <span>JavaScript</span>
         </li>
         <li>
           <img src={TypeScriptIcon} alt="" />
-          TypeScript
+          <span>TypeScript</span>
         </li>
         <li>
           <img src={AngularIcon} alt="" />
-          Angular
+          <span>Angular</span>
         </li>
         <li>
           <img src={ReactIcon} alt="" />
-          React
+          <span>React</span>
         </li>
         <li>
           <img src={VueIcon} alt="" />
-          Vue
+          <span>Vue</span>
         </li>
         <li>
           <img src={NgrxIcon} alt="" />
-          Ngrx
+          <span>Ngrx</span>
         </li>
         <li>
           <img src={ReduxIcon} alt="" />
-          Redux
+          <span>Redux</span>
         </li>
         <li>
           <img src={JestIcon} alt="" />
-          Jest
+          <span>Jest</span>
         </li>
 
         <li>
           <img src={KarmaIcon} alt="" />
-          Karma
+          <span>Karma</span>
         </li>
         <li>
           <img src={CSSIcon} alt="" />
-          CSS
+          <span>CSS</span>
         </li>
         <li>
           <img src={SassIcon} alt="" />
-          Sass
+          <span>Sass</span>
         </li>
         <li>
           <img src={FlexboxIcon} alt="" />
-          Flex
+          <span>Flex</span>
         </li>
         <li>
           <img src={GridIcon} alt="" />
-          Grid
+          <span>Grid</span>
         </li>
         <li>
           <img src={MaterialIcon} alt="" />
-          Angular Material
+          <span>Angular Material</span>
         </li>
         <li>
           <img src={BootstrapIcon} alt="" />
-          Bootstrap
+          <span>Bootstrap</span>
         </li>
         <li>
           <img src={JavaIcon} alt="" />
-          Java
+          <span>Java</span>
         </li>
         <li>
           <img src={SpringIcon} alt="" />
-          Spring
+          <span>Spring</span>
         </li>
         <li>
           <img src={PythonIcon} alt="" />
-          Python
+          <span>Python</span>
         </li>
         <li>
           <img src={DjangoIcon} alt="" />
-          Django
+          <span>Django</span>
         </li>
         <li>
           <img src={WebpackIcon} alt="" />
-          Webpack
+          <span>Webpack</span>
         </li>
         <li>
           <img src={GulpIcon} alt="" />
-          Gulp
+          <span>Gulp</span>
         </li>
         <li>
           <img src={JenkinsIcon} alt="" />
-          Jenkins
+          <span>Jenkins</span>
         </li>
         <li>
           <img src={DockerIcon} alt="" />
-          Docker
+          <span>Docker</span>
         </li>
         <li>
           <img src={WordpressIcon} alt="" />
-          Wordpress
+          <span>Wordpress</span>
         </li>
         <li>
           <img src={GitIcon} alt="" />
-          Git
+          <span>Git</span>
         </li>
         <li>
           <img src={SketchIcon} alt="" />
-          Sketch
+          <span>Sketch</span>
         </li>
         <li>
           <img src={PhotoshopIcon} alt="" />
-          Photoshop
+          <span>Photoshop</span>
         </li>
       </ul>
     </section>

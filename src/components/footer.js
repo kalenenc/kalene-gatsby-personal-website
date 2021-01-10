@@ -41,7 +41,7 @@ const Footer = _props => {
           </a>
         </li>
       </ul>
-      <p>&copy; {fullYear} Kalene Csefalvay </p>
+      <p>&copy; {fullYear}, all rights reserved</p>
     </footer>
   )
 }

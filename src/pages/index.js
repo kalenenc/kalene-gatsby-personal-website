@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ArticlesPreview from "../components/ArticlesPreview"
 import Skills from "../components/Skills"
+import ResourcesPreview from "../components/ResourcesPreview"
 
 class IndexPage extends React.Component {
   render() {
@@ -25,6 +26,8 @@ class IndexPage extends React.Component {
         <ArticlesPreview posts={posts} />
 
         <Skills />
+
+        <ResourcesPreview />
       </Layout>
     )
   }
